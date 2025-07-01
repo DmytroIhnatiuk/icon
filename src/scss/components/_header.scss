@@ -1,0 +1,16 @@
+header {
+	padding-bottom: 0.8rem;
+	&.active {
+		.menu {
+			transform: translateX(-3.6rem) !important;
+		}
+	}
+	&.fixed {
+		background: linear-gradient(
+			87deg,
+			#6a6f4f 25.82%,
+			#a0a584 50.27%,
+			#6a6f4f 88.81%
+		);
+	}
+}

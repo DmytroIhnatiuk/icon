@@ -1,0 +1,66 @@
+.burger {
+	align-items: center;
+	justify-content: center;
+	height: 0.4rem;
+	width: 0.4rem;
+	position: relative;
+	color: inherit;
+	cursor: pointer;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: border 0.3s;
+	&:focus {
+		outline: none;
+	}
+
+	span {
+		position: absolute;
+		display: block;
+		background-color: white;
+
+		width: 0.24rem;
+		height: 1px;
+		transition: background-color 0.3s;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+
+		width: 0.24rem;
+		height: 1px;
+		background-color: white;
+		transition: transform, 0.3s;
+	}
+
+	&:before {
+		transform: translate(0, -0.07rem);
+	}
+
+	&:after {
+		transform: translate(0, 0.07rem);
+	}
+
+	&.active {
+		z-index: 100;
+		span {
+			background-color: transparent;
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+	}
+
+	@media all and (max-width: 600px) {
+		display: inline-flex;
+	}
+}

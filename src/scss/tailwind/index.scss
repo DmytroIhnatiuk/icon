@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	// .nav-list {
+	// 	@apply mb-12 lg:mb-0 px-12 py-8 bg-transparent lg:hover:bg-light-orange transition-colors duration-300 ease-linear rounded-30;
+	// }
+}
+@layer utilities {
+	.btn-gradient {
+		background: linear-gradient(
+			87deg,
+			#6a6f4f 25.82%,
+			#a0a584 50.27%,
+			#6a6f4f 88.81%
+		);
+	}
+	.bg-promo {
+		background: url('@img/promo.png') center center/cover no-repeat;
+	}
+	.bg-trust {
+		background: url('@img/Rectangle 4.png') center center/cover no-repeat;
+	}
+}
