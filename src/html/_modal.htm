@@ -2,7 +2,7 @@
 	class="flex-center h-full w-full modal-container absolute position-0 z-50 container !hidden"
 >
 	<div
-		class="bg-bg max-w-[8.65rem] px-16 py-50 sm:px-50 lg:py-[.6rem] lg:pl-[.8rem] lg:pr-[.6rem] relative"
+		class="bg-bg max-w-[8.65rem] px-16 py-50 sm:px-50 lg:py-[.6rem] lg:pl-[.8rem] lg:pr-[.6rem] relative max-h-full overflow-y-scroll"
 	>
 		<button>
 			<svg
@@ -65,11 +65,11 @@
 	class="flex-center h-full w-full modal-container absolute position-0 z-50 container pt-32 !hidden"
 >
 	<div
-		class="bg-bg max-w-[10.8rem] px-16 pt-50 pb-20 sm:px-50 lg:py-[.6rem] lg:pl-[.8rem] lg:pr-[.6rem] relative"
+		class="bg-bg max-w-[10.8rem] px-16 pt-50 pb-20 sm:px-50 lg:py-[.6rem] lg:pl-[.8rem] lg:pr-[.6rem] relative max-h-full overflow-y-scroll"
 	>
 		<button>
 			<svg
-				class="size-32 fill-transrarent stroke-black lg:hover:scale-[1.1] transition-transform absolute top-32 right-32"
+				class="size-32 fill-transrarent stroke-black lg:hover:scale-[1.1] transition-transform absolute top-32 right-16 sm:right-32"
 			>
 				<use xlink:href="#close-icon"></use>
 			</svg>
@@ -131,6 +131,171 @@
 					<span class="z-10 relative">Відправити</span>
 				</button>
 			</form>
+		</div>
+	</div>
+</div>
+
+<div
+	class="flex-center h-full w-full modal-container absolute position-0 z-50 container py-32 !hidden"
+>
+	<div
+		class="bg-bg pl-16 pt-50 sm:pl-50 lg:pt-[.6rem] lg:pl-[.8rem] relative max-h-full overflow-y-scroll"
+	>
+		<button>
+			<svg
+				class="size-32 fill-transparent stroke-black lg:hover:scale-[1.1] transition-transform absolute top-32 right-16 sm:right-32"
+			>
+				<use xlink:href="#close-icon"></use>
+			</svg>
+		</button>
+
+		<div class="grid grid-cols-1 lg:grid-cols-[1fr,4.84rem] gap-40">
+			<div class="pr-16 sm:pr-50">
+				<h2 class="h2 uppercase font-semibold mb-24">
+					Дізнайтесь вартість
+					<span class="font-light">вашої нерухомості</span>
+				</h2>
+				<div class="tabs-container">
+					<div class="flex gap-24 mb-16 sm:mb-24 uppercase">
+						<div
+							class="px-24 py-12 w-1/2 sm:w-auto cursor-pointer hover:border-black border-b border-transparent border-solid text-center transition-colors duration-300 ease-linear tab-button lg:w-[2.5rem]"
+						>
+							будинок
+						</div>
+						<div
+							class="px-24 py-12 w-1/2 sm:w-auto cursor-pointer hover:border-black border-b border-transparent border-solid text-center transition-colors duration-300 ease-linear tab-button lg:w-[2.5rem]"
+						>
+							квартира
+						</div>
+					</div>
+					<div class="relative">
+						<form
+							class="form gap-x-10 gap-y-16 self-center grid lg:grid-cols-2 bg-bg tab-content -z-10 opacity-0 transition-opacity duration-300 ease-linear"
+						>
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-rooms-house"
+									placeholder="Кількість кімнат"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-area-house"
+									placeholder="Загальна площа"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+
+							<div class="w-full lg:col-start-1 lg:col-end-3">
+								<input
+									type="text"
+									name="cost-calculation-location-house"
+									placeholder="Адреса (вулиця та номер будинку)"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-name-house"
+									placeholder="Ім'я"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-phone-house"
+									placeholder="Телефон"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+							<button
+								type="submit"
+								class="h-[0.54rem] uppercase px-24 w-full sm:w-auto lg:w-full relative hover:before:bg-transparent bg-khaki before:z-10 before:position-0 btn-gradient before:bg-khaki before:transition-colors before:duration-300 before:ease-linear text-white lg:col-start-1 lg:col-end-3 mt-12"
+							>
+								<span class="z-10 relative">Відправити</span>
+							</button>
+						</form>
+						<form
+							class="form gap-x-10 gap-y-16 self-center grid lg:grid-cols-2 tab-content bg-bg opacity-0 -z-10 transition-opacity duration-300 ease-linear absolute top-0 left-0 right-0"
+						>
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-rooms-flat"
+									placeholder="Кількість кімнат"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-area-flat"
+									placeholder="Загальна площа"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+
+							<div class="w-full lg:col-start-1 lg:col-end-3">
+								<input
+									type="text"
+									name="cost-calculation-location-flat"
+									placeholder="Адреса (вулиця та номер будинку)"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-name-flat"
+									placeholder="Ім'я"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+							<div class="w-full">
+								<input
+									type="text"
+									name="cost-calculation-phone-flat"
+									placeholder="Телефон"
+									class="h-[.54rem] w-full border border-solid bg-transparent p-12 flex items-center"
+								/>
+								<div class="form-item__message"></div>
+							</div>
+							<button
+								type="submit"
+								class="h-[0.54rem] uppercase px-24 w-full sm:w-auto lg:w-full relative hover:before:bg-transparent bg-khaki before:z-10 before:position-0 btn-gradient before:bg-khaki before:transition-colors before:duration-300 before:ease-linear text-white lg:col-start-1 lg:col-end-3 mt-12"
+							>
+								<span class="z-10 relative">Відправити</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="w-full image relative h-[2.74rem] sm:h-[3.7rem] lg:h-[5.53rem]"
+			>
+				<img
+					class="object-cover object-bottom size-full"
+					src="@img/Rectangle 11.png"
+					alt="decoration"
+				/>
+			</div>
 		</div>
 	</div>
 </div>
