@@ -50,6 +50,9 @@ button,
 textarea {
 	appearance: none;
 	font-family: inherit;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
 }
 
 input::-ms-clear {

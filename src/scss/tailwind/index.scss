@@ -17,16 +17,27 @@
 		);
 	}
 	.bg-promo {
-		background: url('@img/promo.png') center center/cover no-repeat;
+		background: url('@img/promo-sm.png') center center/cover no-repeat;
+
+		@media all and (min-width: 640px) {
+			background: url('@img/promo.png') center center/cover no-repeat;
+		}
 	}
 	.bg-trust {
 		background: url('@img/Rectangle 4.png') center center/cover no-repeat;
 	}
 	.bg-owner-1 {
-		background: url('@img/owners-page-br-1.png') center center/cover no-repeat;
+		background: url('@img/owners-page-br-1-sm.png') center center/cover
+			no-repeat;
+		@media all and (min-width: 640px) {
+			background: url('@img/owners-page-br-1.png') center center/cover no-repeat;
+		}
 	}
 	.bg-owner-2 {
-		background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
+		background: url('@img/Rectangle 4-sm.png') center center/cover no-repeat;
+		@media all and (min-width: 640px) {
+			background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
+		}
 	}
 	.bg-contact {
 		background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
