@@ -1,5 +1,6 @@
 import 'aos/dist/aos.css'
 import 'swiper/css'
+import 'swiper/css/autoplay'
 import 'swiper/css/effect-cards'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -13,7 +14,7 @@ import './libs/dynamic_adapt.js'
 import burger from './modules/burger.js'
 import { headerFixed } from './modules/index.js'
 import { scrollToAnchor } from './modules/scrollToAnchor.js'
-import { reviewsSlider } from './modules/sliders.js'
+import { ownersSlider, reviewsSlider } from './modules/sliders.js'
 import tabs from './modules/tabs.js'
 
 window.FLS = true
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		burger()
 		tabs()
 		reviewsSlider()
+		ownersSlider()
 	} catch (e) {
 		console.error(e)
 	}

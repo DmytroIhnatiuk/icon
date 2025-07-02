@@ -64,3 +64,23 @@
 		display: inline-flex;
 	}
 }
+.header-black {
+	.burger {
+		span {
+			background: #2d2d2d;
+		}
+		&:before,
+		&:after {
+			background: #2d2d2d;
+		}
+		&.active {
+			span {
+				background: transparent;
+			}
+			&:before,
+			&:after {
+				background: white !important;
+			}
+		}
+	}
+}

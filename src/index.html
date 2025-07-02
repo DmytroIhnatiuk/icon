@@ -29,9 +29,12 @@
 						</button>
 					</div>
 				</section>
-				<section class="pt-50 pb-100">
+				<section class="pt-50 pb-100" id="objects">
 					<div class="container">
-						<div class="tabs-container mb-100 sm:mb-[1.3rem]">
+						<div
+							class="tabs-container mb-100 sm:mb-[1.3rem]"
+							data-aos="fade-up"
+						>
 							<div class="flex gap-24 mb-16 sm:mb-24 uppercase">
 								<div
 									class="px-24 py-12 w-1/2 sm:w-auto cursor-pointer hover:border-black border-b border-transparent border-solid text-center transition-colors duration-300 ease-linear tab-button"
@@ -169,8 +172,9 @@
 						</div>
 						<div
 							class="grid lg:grid-cols-2 gap-y-24 gap-x-24 lg:gap-y-[.62rem] mb-[.8rem] sm:mb-36"
+							data-aos="fade-up"
 						>
-							<h2 class="h2 uppercase font-semibold">
+							<h2 class="h2 uppercase font-semibold" id="about-us">
 								ICON — агенція
 								<span class="font-light">преміальної нерухомості</span> нового
 								покоління
@@ -264,15 +268,22 @@
 				</section>
 				<section
 					class="bg-trust py-40 sm:pt-[.8rem] sm:pb-100 text-white lg:h-[100vh]"
+					id="why-us"
 				>
 					<div class="container flex flex-col justify-between h-full">
-						<h2 class="h2 lg:max-w-[6rem] uppercase font-semibold mb-32">
+						<h2
+							class="h2 lg:max-w-[6rem] uppercase font-semibold mb-32"
+							data-aos="fade-up"
+						>
 							Чому <span class="font-light">нам довіряють</span> клієнти?
 						</h2>
 						<div
 							class="grid mx-20 sm:mx-0 sm:grid-cols-2 lg:grid-cols-4 gap-24 lg:gap-y-32"
 						>
-							<div class="bg-white px-12 pt-32 pb-16 text-black">
+							<div
+								class="bg-white px-12 pt-32 pb-16 text-black"
+								data-aos="fade-up"
+							>
 								<h3
 									class="text-l font-semibold pb-12 border-b border-black border-solid mb-32"
 								>
@@ -283,7 +294,10 @@
 									відповідає саме вам.
 								</p>
 							</div>
-							<div class="bg-white px-12 pt-32 pb-16 text-black">
+							<div
+								class="bg-white px-12 pt-32 pb-16 text-black"
+								data-aos="fade-up"
+							>
 								<h3
 									class="text-l font-semibold pb-12 border-b border-black border-solid mb-32"
 								>
@@ -294,7 +308,10 @@
 									сюрпризи після угоди.
 								</p>
 							</div>
-							<div class="bg-white px-12 pt-32 pb-16 text-black">
+							<div
+								class="bg-white px-12 pt-32 pb-16 text-black"
+								data-aos="fade-up"
+							>
 								<h3
 									class="text-l font-semibold pb-12 border-b border-black border-solid mb-32"
 								>
@@ -302,7 +319,10 @@
 								</h3>
 								<p>Доступ до об’єктів, яких немає у відкритому продажу.</p>
 							</div>
-							<div class="bg-white px-12 pt-32 pb-16 text-black">
+							<div
+								class="bg-white px-12 pt-32 pb-16 text-black"
+								data-aos="fade-up"
+							>
 								<h3
 									class="text-l font-semibold pb-12 border-b border-black border-solid mb-32"
 								>
@@ -313,7 +333,10 @@
 									сім’ями.
 								</p>
 							</div>
-							<div class="bg-white px-12 pt-32 pb-16 text-black">
+							<div
+								class="bg-white px-12 pt-32 pb-16 text-black"
+								data-aos="fade-up"
+							>
 								<h3
 									class="text-l font-semibold pb-12 border-b border-black border-solid mb-32"
 								>
@@ -324,7 +347,10 @@
 									точково і ефективно.
 								</p>
 							</div>
-							<div class="bg-white px-12 pt-32 pb-16 text-black">
+							<div
+								class="bg-white px-12 pt-32 pb-16 text-black"
+								data-aos="fade-up"
+							>
 								<h3
 									class="text-l font-semibold pb-12 border-b border-black border-solid mb-32"
 								>
@@ -338,8 +364,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="py-100 sm:py-[1.2rem]">
-					<div class="container lg:flex">
+				<section class="py-100 sm:py-[1.2rem]" data-aos="fade-up">
+					<div class="container lg:flex" id="owners">
 						<div
 							class="image w-[calc(100%+var(--container-gap))] -translate-x-[var(--container-gap)] lg:w-[4.88rem] h-[2.88rem] lg:h-[3.9rem] flex-shrink-0 mb-36 lg:mb-0"
 						>
@@ -355,7 +381,7 @@
 							</h2>
 
 							<div
-								class="flex flex-col sm:flex-row gap-24 mb-40 pl-[.9rem] sm:pl-0"
+								class="flex flex-col sm:flex-row gap-24 mb-32 pl-[.9rem] sm:pl-0"
 							>
 								<div class="h4">
 									<div class="text-gray mb-12">01/</div>
@@ -372,21 +398,24 @@
 									<p class="font-medium">Юридичний супровід на кожному кроці</p>
 								</div>
 							</div>
-							<button
-								type="submit"
-								class="relative text-white h-[0.54rem] uppercase px-24 w-full lg:w-full sm:max-w-[3rem] hover:before:bg-transparent bg-khaki before:z-10 before:position-0 btn-gradient before:bg-khaki before:transition-colors before:duration-300 before:ease-linear"
+							<a
+								href="owners.html"
+								class="relative text-white h-[0.54rem] uppercase px-24 w-full lg:w-full sm:max-w-[3rem] hover:before:bg-transparent bg-khaki before:z-10 before:position-0 btn-gradient before:bg-khaki before:transition-colors before:duration-300 before:ease-linear flex-center"
 							>
-								<span class="z-10 relative">залишити заявку</span>
-							</button>
+								<span class="z-10 relative">детальніше</span>
+							</a>
 						</div>
 					</div>
 				</section>
 				<section class="pb-100 lg:pb-[1.3rem]">
 					<div class="container">
-						<h2 class="h2 font-semibold uppercase mb-40 lg:mb-[.56rem]">
+						<h2
+							class="h2 font-semibold uppercase mb-40 lg:mb-[.56rem]"
+							data-aos="fade-up"
+						>
 							про нас <span class="font-light">говорять</span> клієнти
 						</h2>
-						<div class="swiper" data-swiper="reviewsSlider">
+						<div class="swiper" data-swiper="reviewsSlider" data-aos="fade-up">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div

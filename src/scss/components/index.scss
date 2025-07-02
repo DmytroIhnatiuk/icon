@@ -14,7 +14,8 @@
 	.video_img {
 		&::before {
 			z-index: 1;
-			background: linear-gradient(
+			background:
+				linear-gradient(
 					0deg,
 					rgba(49, 45, 43, 0.5) 0%,
 					rgba(49, 45, 43, 0.5) 100%
@@ -31,4 +32,15 @@
 			visibility: hidden;
 		}
 	}
+}
+.swiper-pagination-bullet {
+	width: 0.32rem !important;
+	height: 1px !important;
+	background: white !important;
+	opacity: 0.5 !important;
+	z-index: 20 !important;
+	border-radius: 0;
+}
+.swiper-pagination-bullet-active {
+	opacity: 1 !important;
 }

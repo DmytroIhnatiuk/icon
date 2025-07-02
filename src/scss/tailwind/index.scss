@@ -22,4 +22,17 @@
 	.bg-trust {
 		background: url('@img/Rectangle 4.png') center center/cover no-repeat;
 	}
+	.bg-owner-1 {
+		background: url('@img/owners-page-br-1.png') center center/cover no-repeat;
+	}
+	.bg-owner-2 {
+		background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
+	}
+	.bg-contact {
+		background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
+	}
+	.modal-container {
+		background: rgba(45, 45, 45, 0.6);
+		backdrop-filter: blur(5px);
+	}
 }

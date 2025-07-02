@@ -1,0 +1,71 @@
+<header
+	class="!max-h-[var(--header-height)] w-full z-50 !fixed transition-transform duration-500 ease-linear header-black"
+>
+	<div class="container flex items-center mt-26">
+		<a
+			href="index.html"
+			class="h-[.43rem] sm:h-[.64rem] w-[1.05rem] sm:w-[1.55rem]"
+		>
+			<img class="object-contain" src="@img/logo-b.png" alt="logo" />
+		</a>
+		<div
+			class="menu ml-auto bg-khaki lg:bg-transparent absolute top-0 right-[-3.6rem] lg:static px-16 py-32 sm:py-50 w-[3.6rem] h-[100vh] lg:h-auto lg:w-auto lg:p-0 lg:mr-50 transition-transform duration-300 ease-linear"
+		>
+			<a
+				href="index.html"
+				class="image h-[.43rem] w-[1.02rem] sm:hidden mb-50 block mx-auto"
+			>
+				<img class="object-contain" src="@img/logo.png" alt="logo" />
+			</a>
+			<ul
+				class="flex uppercase lg:lowercase flex-col lg:flex-row items-center gap-32 lg:gap-36 mb-[1.2rem] lg:mb-0 text-white lg:text-black"
+			>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="#objects">об’єкти</a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="#about-us">про нас</a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="#why-us">чому ми</a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="#reviews">про нас говорять клієнти </a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="#owners">власникам </a>
+				</li>
+				<li
+					class="border-b border-transparent border-solid lg:hover:border-black transition-colors !duration-300 ease-linear"
+				>
+					<a href="contact.html">контакти</a>
+				</li>
+			</ul>
+			<button
+				class="uppercase w-full p-16 border border-solid border-white bg-transparent lg:hover:bg-white lg:hover:text-khaki transition-colors duration-300 ease-linear lg:hidden text-white"
+			>
+				залишити заявку
+			</button>
+		</div>
+		<a
+			class="uppercase sm:py-12 sm:px-24 sm:border border-solid border-black bg-transparent lg:hover:bg-khaki lg:hover:border-khaki lg:hover:text-white transition-colors duration-300 ease-linear ml-auto lg:ml-0 mr-10 lg:mr-0"
+			href="tel:+380000000000"
+		>
+			<span class="hidden sm:block">Зв’язатись</span>
+			<svg class="size-40 sm:hidden fill-transparent stroke-black">
+				<use xlink:href="#phone-header"></use>
+			</svg>
+		</a>
+		<button class="burger lg:!hidden"><span></span></button>
+	</div>
+</header>

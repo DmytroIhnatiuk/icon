@@ -14,3 +14,9 @@ header {
 		);
 	}
 }
+
+.header-black {
+	&.fixed {
+		background: #fbf8f5;
+	}
+}
