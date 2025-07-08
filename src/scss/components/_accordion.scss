@@ -61,8 +61,8 @@
 		height: 100%;
 		overflow: hidden;
 		transition: max-height 0.3s ease-out;
-		@media all and (min-width: 1024px) {
-			max-height: auto;
-		}
+		//@media all and (min-width: 1024px) {
+		//	max-height: auto;
+		//}
 	}
 }

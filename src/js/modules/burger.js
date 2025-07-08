@@ -1,5 +1,5 @@
 import {header} from '../core/elementsNodeList.js'
-import {disableScrollAndSwipes, enableScrollAndSwipes} from '../core/index.js'
+import {disableScroll, disableScrollAndSwipes, enableScroll, enableScrollAndSwipes} from '../core/index.js'
 
 const burger = () => {
 
@@ -16,8 +16,8 @@ const burger = () => {
                         ? burger.dataset.position
                         : scrollY || document.documentElement.scrollTop
                 if (burger.classList.contains('active')) {
-                    enableScrollAndSwipes(scrollPosition)
-                    burger.dataset.position = '0'
+                    enableScroll()
+                    // burger.dataset.position = '0'
                     setTimeout(() => {
                         burger.classList.remove('active')
                         menu.classList.remove('active')
@@ -25,7 +25,7 @@ const burger = () => {
                     }, 100)
                 } else {
                     burger.dataset.position = scrollPosition
-                    disableScrollAndSwipes(scrollPosition)
+                    disableScroll()
                     burger.classList.add('active')
                     menu.classList.add('active')
                     body.classList.add('active')

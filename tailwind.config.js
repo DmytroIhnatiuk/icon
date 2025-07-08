@@ -54,7 +54,6 @@ module.exports = {
 				'off-white': '#F6F0E7',
 				gray: '#5E5E5E',
 				'light-gray': '#CACACA',
-				red: 'var(--red)',
 			},
 
 			borderRadius: {

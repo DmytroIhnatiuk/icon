@@ -5,7 +5,6 @@
   position: relative;
 
 
-
   input,
   textarea,
   {
@@ -39,29 +38,22 @@
 
 
   &.invalid {
-    color: var(--error);
+    color: #f87171;
 
     input, textarea {
-      border-color: var(--error);
+      border-color: #f87171;
 
-    }
-
-    .invalid {
-      opacity: 1;
-      visibility: visible;
-      width: .16rem;
     }
   }
 
 
-
   &__message {
-    padding-top: .02rem;
+    padding-top: 0;
     position: absolute;
-    height: gem(22);
-    line-height: gem(16);
-    font-size: gem(12);
-    bottom: gem(-22);
+    height: 0.16rem;
+    line-height: 0.16rem;
+    font-size: 0.12rem;
+    bottom: -.16rem;
   }
 
 }

@@ -2,48 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	// .nav-list {
-	// 	@apply mb-12 lg:mb-0 px-12 py-8 bg-transparent lg:hover:bg-light-orange transition-colors duration-300 ease-linear rounded-30;
-	// }
-}
-@layer utilities {
-	.btn-gradient {
-		background: linear-gradient(
-			87deg,
-			#6a6f4f 25.82%,
-			#a0a584 50.27%,
-			#6a6f4f 88.81%
-		);
-	}
-	.bg-promo {
-		background: url('@img/promo-sm.png') center center/cover no-repeat;
 
-		@media all and (min-width: 640px) {
-			background: url('@img/promo.png') center center/cover no-repeat;
-		}
-	}
-	.bg-trust {
-		background: url('@img/Rectangle 4.png') center center/cover no-repeat;
-	}
-	.bg-owner-1 {
-		background: url('@img/owners-page-br-1-sm.png') center center/cover
-			no-repeat;
-		@media all and (min-width: 640px) {
-			background: url('@img/owners-page-br-1.png') center center/cover no-repeat;
-		}
-	}
-	.bg-owner-2 {
-		background: url('@img/Rectangle 4-sm.png') center center/cover no-repeat;
-		@media all and (min-width: 640px) {
-			background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
-		}
-	}
-	.bg-contact {
-		background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
-	}
-	.modal-container {
-		background: rgba(45, 45, 45, 0.6);
-		backdrop-filter: blur(5px);
-	}
+
+@layer utilities {
+  .btn-gradient {
+    background: linear-gradient(
+                    87deg,
+                    #6a6f4f 25.82%,
+                    #a0a584 50.27%,
+                    #6a6f4f 88.81%
+    );
+  }
+
+  .bg-promo {
+    background: url('@img/promo-sm.png') center center/cover no-repeat;
+
+    @media all and (min-width: 640px) {
+      background: url('@img/promo.png') center center/cover no-repeat;
+    }
+  }
+
+  .bg-trust {
+    background: url('@img/Rectangle 4.png') center center/cover no-repeat;
+  }
+
+  .bg-owner-1 {
+    background: url('@img/owners-page-br-1-sm.png') center center/cover no-repeat;
+    @media all and (min-width: 640px) {
+      background: url('@img/owners-page-br-1.png') center center/cover no-repeat;
+    }
+  }
+
+  .bg-owner-2 {
+    background: url('@img/Rectangle 4-sm.png') center center/cover no-repeat;
+    @media all and (min-width: 640px) {
+      background: url('@img/Rectangle 4 (1).png') center center/cover no-repeat;
+    }
+  }
+
+  .bg-contact {
+    background: url('@img/contacts-bg.png') center center/cover no-repeat;
+  }
+
+  .modal-container {
+    background: rgba(45, 45, 45, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+.disabled {
+  @apply opacity-50 pointer-events-none;
 }

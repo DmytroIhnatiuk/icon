@@ -47,6 +47,9 @@ const translateFields = {
         en: "An error occurred! Try it later!",
         ua: 'Виникла помилка!\nСпробуйте пізніше!',
     },
+    placeholder: {
+        ua: `Поле обов'язкове для заповнення*`,
+    }
 
 
 };

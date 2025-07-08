@@ -1,5 +1,5 @@
 import {header} from "../core/elementsNodeList.js";
-import {enableScrollAndSwipes, getElement, getElements} from "../core/index.js";
+import {enableScroll, getElement, getElements} from "../core/index.js";
 
 
 let loc = location.origin;
@@ -7,6 +7,8 @@ const scrollToAnchor = function () {
     if (header) {
         const links = getElements(".scroll-to");
         const burger = getElement('.burger')
+        const menu = document.querySelector('header')
+        const body = document.body
         links.forEach((link) => {
             link.addEventListener("click", function (event) {
                 event.preventDefault();
@@ -17,13 +19,13 @@ const scrollToAnchor = function () {
                     burger &&
                     burger.classList.contains("active")
                 ) {
-                    const scrollPosition = burger.dataset.position
-                    enableScrollAndSwipes(scrollPosition);
-                    burger.dataset.position = '0';
+                    enableScroll()
+                    // burger.dataset.position = '0'
                     setTimeout(() => {
-                        burger.classList.remove("active");
-                        header.classList.remove("active");
-                    }, 0)
+                        burger.classList.remove('active')
+                        menu.classList.remove('active')
+                        body.classList.remove('active')
+                    }, 100)
                 }
 
                 // scrollToAnotherPage(blockID, "#services");

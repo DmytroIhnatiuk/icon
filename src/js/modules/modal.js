@@ -1,4 +1,4 @@
-import {getElement} from "../core/index.js";
+import {disableScroll, enableScroll, getElement} from "../core/index.js";
 
 class Modal {
     constructor(element) {
@@ -32,7 +32,7 @@ class Modal {
         document.addEventListener("keydown", (e) => {
             this.handleEscape(e);
         });
-        this.disableScrollAndSwipes();
+        disableScroll();
         this.modal.addEventListener("click", (e) => {
             this.handleOutside(e);
         });
@@ -51,9 +51,8 @@ class Modal {
     }
 
     closeModal() {
-        this.enableScrollAndSwipes()
+        enableScroll();
         setTimeout(() => {
-            this.modal.classList = "modal";
             this.modal.classList.add("hide");
             this.modal.classList.remove("show");
             // getElement('.modal__content', this.modal).classList = 'modal__content w-100';

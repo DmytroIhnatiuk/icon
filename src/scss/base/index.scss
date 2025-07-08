@@ -180,7 +180,8 @@ body {
 	min-height: -webkit-fill-available;
 	&::before {
 		content: '';
-		position: absolute;
+		position: fixed;
+		height: 100vh;
 		top: 0;
 		right: 0;
 		bottom: 0;
@@ -189,7 +190,8 @@ body {
 		transform: translateZ(0);
 		opacity: 0;
 		visibility: hidden;
-		backdrop-filter: blur(gem(5));
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
 		-webkit-backface-visibility: hidden;
 		-webkit-perspective: 1000;
 		transform: translate(0) translate3d(0, 0, 0) translateZ(0);
